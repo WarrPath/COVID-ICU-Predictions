@@ -1,8 +1,8 @@
 # COVID-ICU-Predictions
-MOTIVATION
+MOTIVATION: 
 The COVID-19 pandemic has shown us the unpreparedness of our current healthcare system and services. We need to optimize the allocation of medical resources to maximize the utilization of resources. I have prepared this Machine Learning model based on the clinical data of patients admitted to the Hospital Sírio-Libanês, São Paulo and Brasilia. This will help us to predict the need of ICU for a patient in advance. With this information hospitals can plan the flow of operations and make critical decisions like shifting a patient to another hospital or determining the arrangement of resources within the time so that patients’ lives can be saved.
 
-ABOUT THE DATASET
+ABOUT THE DATASET: 
 The dataset contains 1925 rows and 231 columns of anonymized patient data with 54 features: 
   Patient Demographics (3 features): Age above 65 years old, Age percentile, Gender
   Disease Groupings (9 features): Groupings 1-6 (past comorbidities), Hypertension, Immunocompromised, and Other
@@ -31,5 +31,5 @@ Some lab test and vital sign data is not available for all time windows, resulti
 
 AGE_PERCENTIL and WINDOW columns are non-numeric, so they will be transformed or normalized by encoding with numerical values between 0 and 1. 
 
-OBJECTIVE
+OBJECTIVE: 
 The objective of this study is to predict whether a patient will need to be admitted into the ICU based on their health information. So for the model to make more clinically relevant predictions, it will receive data only from the first window time frame of 0-2 hours and then from all windows except the last, above 12 hours. The earlier the model can predict the need for ICU treatment of the patient, the more it becomes clinically relevant.
